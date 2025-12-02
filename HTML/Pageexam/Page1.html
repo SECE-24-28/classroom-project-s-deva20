@@ -1,0 +1,151 @@
+<html>
+    <title>title1</title>
+    <body>
+        <h1>layer4 sample</h1>
+
+         <style>
+            #laydiv{
+                width:100%;
+                background-color: lightgrey;
+                min-height:40px;
+                line-height: 40px;
+                margin-bottom: 5px;
+                padding: 5px;
+                 
+            }
+            #bottom{
+                width:100%;
+                background-color: lightgrey;
+                min-height:40px;
+                line-height: 40px;
+                margin-bottom: 5px;
+                padding: 5px;
+               
+            }
+
+            #first{
+                width:25%;
+                background-color: lightgrey;
+                min-height:60px;
+                line-height:60px;
+                text-align: center;
+                margin-bottom: 5px;
+                 margin-left: 100px;
+            }
+            #second{
+                width:25%;
+                background-color: lightgrey;
+                min-height:60px;
+                line-height:60px;
+                text-align: center;
+                margin-bottom: 5px;
+                margin-left: 100px;
+            }
+            #third{
+                width:25%;
+                background-color: lightgrey;
+                min-height:60px;
+                line-height:60px;
+                text-align: center;
+                margin-bottom: 5px;
+                margin-left: 100px;
+                
+            }
+            #four{
+                width:25%;
+                background-color: lightgrey;
+                min-height:60px;
+                line-height:60px;
+                text-align: center;
+                margin-bottom: 5px;
+                margin-left: 100px;
+            }
+           
+            #prat1{
+                width:100%;
+                
+                display:flex;
+            }
+            #prat2{
+                width:100%;
+                display:flex;
+            }
+            #prat3{
+                width:100%;
+                display:flex;
+            }
+            #prat4{
+                width:100%;
+                display:flex;
+            }
+
+            .btn{
+                background-color: rgb(236, 148, 163);
+                color:rgb(155, 11, 136);
+                transition: background 0.3s ease,trasform 0.3s ease;
+            }
+
+            .btn:hover{
+                background: rgb(237, 192, 237);
+                transform: scale(1.1);
+            }
+
+            .anima{
+                width: 50px;
+                height:50px;
+                background-color: green;
+                animation:move 2s ease 2s 5 alternate;
+                margin-top: 10px;
+            }
+
+            #side{
+                width:25%;
+                background-color: lightgray;
+                margin-top: 10px;
+                min-height:250px;
+                text-align: center;
+                line-height:250px;
+            }
+
+            #main{
+                width:100%;
+                height:250px;
+                background-color: black;
+                display: flex;
+            }
+
+            @keyframes move{
+                from{transform:translate(100px);}
+                to{transform: translate(150px);}
+            }
+         </style>
+        <div id="laydiv">logo</div>
+        
+        
+            
+        <div id="prat1">
+        <div id="first">one</div>
+        <div id="second">second</div>
+        </div>
+        <div id="prat2">
+        <div id="third">third</div>
+        <div id="four">four</div>
+        </div>
+        <div id="prat3">
+        <div id="third">five</div>
+        <div id="four">six</div>
+        </div>
+        <div id="prat4">
+        <div id="third">seven</div>
+        <div id="four">eight</div>
+        </div>
+
+        <div id="bottom">footer</div>
+
+        <button class="btn">Button me</button>
+
+        
+        <div class="anima"></div>
+
+    </body>
+</html>
