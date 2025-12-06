@@ -1,0 +1,62 @@
+<html>
+    <title>login page</title>
+     
+    <body>
+        
+        <form>
+ 
+       <label>Enter the name:</label> <input type="text" name="tname" id="name"><br><br>
+       <label>Enter Department:</label><input type="text" name="dep" id="det"><br><br>
+       <label>Enter Password:</label><input type="password" name="password" id="pass"><br><br>
+       <label>Enter Gender:</label><br>
+       <input type="radio" value="m" name="gender">Male<br>
+       <input type="radio" value="h" name="gender">Female<br><br>
+
+       <label>Select course:</label>
+       <select>
+        <option>Computer Science</option>
+        <option>Maths</option>
+        <option>Biology</option>
+        <option>commerce</option>
+        <option>Arts</option>
+       </select><br><br>
+
+       <label>Enter phone no:</label>
+       <input type="text"><br><br>
+       
+       <button type="button" onclick="goToPage()">Submit</button>
+
+    <form>
+    </body>
+    </html>
+
+<script type="text/javascript">
+
+function validate(){
+isTxtname=true
+{
+
+if(document.getElementById("tn").value==="")
+{
+document.getElementById("stn").innerHTML="Enter the name"
+document.getElementById("stn").style.color="red"
+isTxtname=false
+}
+
+else
+{
+document.getElementById("stn").innerHTML="valid"
+document.getElementById("stn").style.color="green"
+isTxtname=true
+}
+return isTxtname;
+}
+
+}
+function goToPage(){
+    window.location.href = "process.html"
+}
+
+</script>
+
+

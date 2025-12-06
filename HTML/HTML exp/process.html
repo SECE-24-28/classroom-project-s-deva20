@@ -1,0 +1,13 @@
+<html>
+    <title>process</title>
+    <body>
+        <h2>Student detail</h2>
+        <script type="text/javascript">
+            var query=window.location.search;
+            var data=new URLSearchParams(query)
+            document.write("the query:",query)
+            document.write("the data:",data)
+            document.write("the gender is",data.get("valradio"))
+        </script>
+    </body>
+</html>
